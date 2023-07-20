@@ -14,9 +14,7 @@ class Solution:
 
     def firstPalindrome(self, words: List[str]) -> str:
 
-        fp = ""
         for word in words:
             if self.isPalindrome(word):
-                fp = word
-                break
-        return fp
+                return word
+        return ""
