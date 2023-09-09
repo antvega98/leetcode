@@ -4,7 +4,7 @@ var numberOfPairs = function(nums) {
     const d = {}
 
     for(const num of nums){
-        d[num] = d[num] == null ? 1 : d[num] + 1
+        d[num] = (d[num] ?? 0) + 1
     }
 
     let pairs = 0
